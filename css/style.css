@@ -5,72 +5,87 @@ body{
   padding: 0;
   font-family: sans-serif;
 }
-
 header{
   display: flex;  
   background-color: rgb(235, 150, 13);
   border: 1px solid #555;
   text-align: center;
   align-items: center;
-  box-sizing: border-box;
-  
+  box-sizing: border-box;  
 }
-
-
-
 header nav, h1, ul{
   padding: 0;
   margin: 0;
   justify-content: center;
 }
-
 header h1{
   border: 1px solid #555; 
   background-color: rgb(225, 225, 225); 
   height: 80px;
   padding: 0;
 }
-
 .nav-list{
   list-style-type: none;  
   font-size: 0;
   
 }
-
 .nav-item{
   border: 1px solid #555;  
-  width: 150px;    
+  width: 150px;
+  height: 70px;
+  text-align: center;
+  align-items: center;
   background-color: rgb(225, 225, 225);  
   display: inline-block;  
   font-size: 14px;  
+  padding: 5px 5px 5px 5px;
 
 }
-
 .nav-list li a{
   transition: all 0.3s ease 0s;
   color: rgb(93, 181, 77);
   
 }
-
 .nav-list li a:hover{
   color: #0088a9;
 }
-
-
 .nav-login{
   border: 1px solid #555;
   width: 150px;  
+  height: 70px;
   background-color: rgba(157, 215, 251, 0.926);
   margin-left: auto;
-  color: rgb(93, 181, 77);
-   
+  color: rgb(93, 181, 77);   
+  padding: 5px 5px 5px 5px;
 }
-
 .nav-login:hover{
   color: #0087a99f;
   transition: all 0.3s ease 0s;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+main{
+  background-color: rgba(235, 217, 13, 0.91);
+  border: 1px solid #555;
+  display: grid;
+ 
+
+}
+
+aside{
+  border: 1px solid #555;
+  background-color: rgb(116, 195, 116);
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+aside ul, li{
+  list-style-type: none;
+}
 
 footer{
   display: flex;
@@ -86,9 +101,10 @@ footer{
 
 
 .img-logo{
-  width: 100px;
-  height: 80px;
+  width: 95px;
+  height: 70px;
   object-fit: cover;
+  padding: 5px 5px 5px 5px;
 }
 
 .image2 {
