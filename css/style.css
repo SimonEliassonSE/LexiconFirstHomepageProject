@@ -1,5 +1,5 @@
 
-body{
+body *{
   max-width: 1024px;
   margin: 0 auto;
   padding: 0;
@@ -7,59 +7,62 @@ body{
 }
 header{
   display: flex;  
-  background-color: rgb(235, 150, 13);
-  border: 1px solid #555;
-  text-align: center;
-  align-items: center;
-  box-sizing: border-box;  
+  background-color: rgb(235, 150, 13); 
+  
 }
+
 header nav, h1, ul{
   padding: 0;
   margin: 0;
-  justify-content: center;
 }
+
 header h1{
   border: 1px solid #555; 
   background-color: rgb(225, 225, 225); 
   height: 80px;
   padding: 0;
+  margin-left:0;
 }
+
+
 .nav-list{
   list-style-type: none;  
   font-size: 0;
-  
-  
 }
-.nav-item{
-  border: 1px solid #555;  
-  width: 150px;
-  height: 70px;
-  text-align: center;
-  align-items: center;
-  background-color: rgb(225, 225, 225);  
-  display: inline-block;
-  font-size: 14px;  
-  padding: 5px 5px 5px 5px;
-  
 
+.nav-item {
+  border: 1px solid #555;  
+  width: 150px;  
+  background-color: rgb(74, 157, 195);  
+  display: inline-block;  
+  font-size: 14px;  
+  padding: 32px 10px 32px 10px;
+  text-align: center;
 }
+
 .nav-list li a{
   transition: all 0.3s ease 0s;
-  color: rgb(93, 181, 77);
-  
+  color: rgb(30, 19, 20); 
+  text-decoration: none; 
+  font-weight: bold;
 }
+
 .nav-list li a:hover{
   color: #0088a9;
 }
+
 .nav-login{
   border: 1px solid #555;
-  width: 150px;  
-  height: 70px;
-  background-color: rgba(157, 215, 251, 0.926);
-  margin-left: auto;
-  color: rgb(93, 181, 77);   
-  padding: 5px 5px 5px 5px;
+  width: 150px;   
+  padding: 31px 10px 31px 10px;
+  background-color: rgba(160, 155, 209, 0.992);
+  margin-right: 0;
+  color: rgb(30, 19, 20); 
+  font-weight: bold; 
+  text-align: center;
+  text-decoration: none; 
 }
+
 .nav-login:hover{
   color: #0087a99f;
   transition: all 0.3s ease 0s;
@@ -67,12 +70,11 @@ header h1{
 
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  
+  grid-template-columns: 2fr 1fr;  
 }
+
 main{
-  background-color: rgba(235, 217, 13, 0.91);
-  border: 1px solid #555;
+  background-color: rgba(235, 217, 13, 0.91);  
   display: grid;  
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);  
@@ -84,11 +86,11 @@ main .main-headline, .main-p, .article-1, .article-2{
   padding: 15px;
   place-self: flex-start;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 } 
 
 main h2, h3{  
+  
   align-items: center;
   place-self: flex-start;
   justify-content: center;
@@ -99,6 +101,7 @@ main h2, h3{
 }
 
 .main-p{
+  padding: 10px;
   grid-column: span 4;
   margin:  0px   20px  0px  20px;  
   
@@ -106,26 +109,37 @@ main h2, h3{
 
 .article-1{
   grid-column: span 2;
-  margin:  0px  0px  20px  20px;   
+  margin:  0px  0px  20px  20px;
+  padding: 10px;   
 }
+
+.fristarticle-secondp{
+  font-weight: bold;
+  color: blue;
+}
+
 .article-2{
   grid-column: span 2;
   margin:  0px   20px  20px  0px;  
+  padding: 10px;
  
 }
 
 aside{
-  border: 1px solid #555;
   background-color: rgb(116, 195, 116);
   display: grid; 
   grid-gap: 0px; 
 }
 
 aside ul{
-  padding: 15px;
+  padding: 15px;  
 }
 
-aside div{
+aside ol{
+  margin: 5px 10px 5px 10px;
+}
+
+aside div{  
   border: 1px solid #555;
   background-color: rgb(234, 232, 232);
   padding: 15px;
@@ -133,50 +147,96 @@ aside div{
   margin: 20px 20px 20px 20px;
 }
 
+aside ol{
+padding: 10px 10px 10px 10px  
+}
+
+.asidelist-1{
+  color: green;
+}
+
+.asidelist-2{
+  color: red;
+}
+
+.asidelist-3{
+  color: deepskyblue;
+}
+
+
 footer{
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
+  justify-content: center;  
   height: 70px;
-  color: aqua;
   background-color: purple;
-  border: 2px solid #555;
+  
+}
+
+footer p{
+  color: aqua;
 }
 
 section{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid #555;
-  background-color: rgba(255, 250, 250, 0.937);
-  margin:0px;
-  padding: 20px; 
+  grid-template-columns: repeat(7, 1fr);
+  background-color: rgb(231, 207, 29); 
 }
+
 section h3, form{
   border: 1px solid #555;
-  background-color: rgba(240, 158, 158, 0.793); 
-  grid-column: span 2;
+  background-color: rgba(252, 242, 242, 0.954);  
   padding: 20px;
-  align-items: center;
-  place-self: flex-start;
-  justify-content: center;
-
+  
 }
 
+
+
 section form{
-  border-radius: 15px;
+  border-radius: 8px;
+  grid-area: 2 / 3 / 3 / 6;
+  margin: 0px 20px 50px 0px;
+  font-weight: bold;
+  
+}
+
+
+
+section .reset-button, .login-button{
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color:rgb(207, 206, 206)
+}
+section td{
+  padding: 2px 2px 2px 2px;
+  
 }
 
 section h3{
-  text-transform: uppercase;
+  text-transform: uppercase;  
+  grid-column: span 2/3;
+  grid-area: 1 / 3 / 2 / 3;
+  font-size: 12px;
+  margin: 50px 0px 6px 0px;
+
 }
 
+section input, .username, .password{
+  font-weight: bold;
+  color: rgb(121, 2, 2);
+  background-color:rgb(255, 255, 255);
+  
+}
+
+
+
 .img-logo{
-  width: 95px;
+  width: 120px;
   height: 80px;
   object-fit: cover;
-  padding:0
+  padding:0;
+  margin: 0;
+ 
 }
 
 .image2 {
